@@ -49,7 +49,7 @@ console.log(a) prints [1, 2, 3, 1]
 const appendFirstToLast = (arr) => {
     // Solution code here...
     arr.push(arr[0]);
-   }
+}
 
 
 
@@ -94,7 +94,7 @@ const setStatusAsAuthor = (people) => {
 // Solution code here...
 for(let i in people) {
     people[i].isAuthor = true;
-}
+    }
 }
 
 
@@ -120,7 +120,6 @@ const append = (arr1, arr2) => {
 for(let i in arr2) {
     arr1.push(arr2[i])
   }
-
 }
 
 
