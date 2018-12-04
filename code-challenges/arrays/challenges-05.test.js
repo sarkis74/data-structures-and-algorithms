@@ -182,6 +182,16 @@ removeLastCharacters('Gregor', 9) returns ''
 
 const removeLastCharacters = (str, numberOfCharacters) => {
   // Solution code here...
+  if(numberOfCharacters <= str.length && numberOfCharacters >= 0) {
+    return str.substring(0, str.length - numberOfCharacters)
+  }
+  else if(numberOfCharacters < 0) 
+  {
+    return str;
+  }
+  else {
+    return '';
+  }
 };
 
 
@@ -286,21 +296,21 @@ describe('Testing challenge 6', () => {
   });
 });
 
-// describe('Testing challenge 7', () => {
-//   test('It should shorten the string based on the first argument', () => {
-//     expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
-//     expect(removeLastCharacters('Gregor', 2).length).toStrictEqual(4);
-//   });
-//   test('It should return the complete string when passed a negative number', () => {
-//     expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
-//     expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
-//   });
-//   test('It should return an empty string when called with a number larger than the string length', () => {
-//     expect(removeLastCharacters('hello', 12)).toStrictEqual('');
-//     expect(removeLastCharacters('', 1)).toStrictEqual('');
-//     expect(removeLastCharacters('a', 1)).toStrictEqual('');
-//   });
-// });
+describe('Testing challenge 7', () => {
+  test('It should shorten the string based on the first argument', () => {
+    expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
+    expect(removeLastCharacters('Gregor', 2).length).toStrictEqual(4);
+  });
+  test('It should return the complete string when passed a negative number', () => {
+    expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
+    expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
+  });
+  test('It should return an empty string when called with a number larger than the string length', () => {
+    expect(removeLastCharacters('hello', 12)).toStrictEqual('');
+    expect(removeLastCharacters('', 1)).toStrictEqual('');
+    expect(removeLastCharacters('a', 1)).toStrictEqual('');
+  });
+});
 
 // describe('Testing challenge 8', () => {
 //   test('It should add up the numbers contained within the string', () => {
