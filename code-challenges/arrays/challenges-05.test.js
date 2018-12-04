@@ -185,8 +185,7 @@ const removeLastCharacters = (str, numberOfCharacters) => {
   if(numberOfCharacters <= str.length && numberOfCharacters >= 0) {
     return str.substring(0, str.length - numberOfCharacters)
   }
-  else if(numberOfCharacters < 0) 
-  {
+  else if(numberOfCharacters < 0) {
     return str;
   }
   else {
