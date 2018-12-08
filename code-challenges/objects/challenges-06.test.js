@@ -311,7 +311,6 @@ For example: [ { house: 'Stark', members: 6 }, { house: 'Arryn', members: 2 }, .
 const deceasedSpouses = ['Catelyn', 'Lysa', 'Robert', 'Khal Drogo', 'Alerie'];
 
 
-
 const houseSurvivors = (arr) => {
 
   const survivors = [];
