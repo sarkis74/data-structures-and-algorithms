@@ -25,8 +25,15 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-  // Solution code here...
-};
+    // Solution code here...
+    const temp = [];
+    arr.filter(item => {
+      if(/[aeiou]/.test(item) === true)
+      temp.push(item);
+    });
+    return arr = temp;
+  };
+  
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,8 +45,16 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
-};
+    // Solution code here...
+    arr.filter(item => {
+      for(var i in forbiddenValues) {
+        if(forbiddenValues[i] === item) {
+        arr.splice(i, 1)
+        }
+      }
+      return arr;
+    })
+  };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
