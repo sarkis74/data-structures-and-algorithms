@@ -177,6 +177,16 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 
 const calculateAverage = (arr) => {
   // Solution code here...
+  let avg = arr.reduce((total, current, index) => {
+    total+= current;
+    if(index === arr.length - 1) {
+      return total/arr.length;
+    }
+      else {
+        return total;
+      }
+  },0)
+  return avg;
 };
 
 /* ------------------------------------------------------------------------------------------------
