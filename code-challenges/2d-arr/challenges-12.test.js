@@ -33,7 +33,7 @@ sum = 0;
     }
   sumArr.push(sum)
   }
-  return sumArr;
+  return stores = sumArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,6 +48,12 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let resultArr = [];
+  let tempArr = data;
+  tempArr.forEach((value, index) => {
+    resultArr.push({sales:value + ' ' + 'cookies', time:hours[index]})
+  })
+return resultArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -70,8 +76,15 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  let sum;
+  arr.filter((obj, index) => {
+    obj.items.reduce((total, value) => {
+      if(value.name == 'Treats')
+      sum = value.quantity;
+    }, 0)
+  })
+  return sum;
 }
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -92,6 +105,17 @@ The top row of the board is considered row zero and row numbers increase as they
 
 const battleship = (board, row, col) => {
   //  Solution code here...
+  var sum = 0;
+  var sumArr = [];
+  for(var i = 0; i < board[0].length; i++) { 
+  sum = 0;
+    for(var j = 0; j < board.length; j++) { 
+      if(board[col][row] == '#' && typeof board[col][row] != undefined)
+      return 'hit'; 
+      if(board[col][row] != '#' && typeof board[col][row] != undefined)
+      return 'miss';
+    }
+  }  
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,6 +128,14 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 
 const calculateProduct = (numbers) => {
   // Solution code here...
+  var mult = 1;
+  for(var i = 0; i < numbers[0].length; i++) { 
+    for(var j = 0; j < numbers.length; j++) { 
+    mult *= numbers[j][i]; //Indices captures [r][c] item
+    }
+    
+  }
+  return mult;
 }
 
 /* ------------------------------------------------------------------------------------------------
