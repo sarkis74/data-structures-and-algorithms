@@ -1,7 +1,7 @@
 'use strict';
 
 // Sarkis - Import constructor properties/methods
-const LinkedList = require('../linked-list');
+const LinkedList = require('../../LL-Methods/linked-list');
 
 function Node(value, next = null) {
     this.value = value;
