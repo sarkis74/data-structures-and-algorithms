@@ -2,10 +2,21 @@
 
 // node class
 
-class Node {
-    constructor(value) {
-        this.value = value;
-        this.left = null;
-        this.right = null;
+class BST {
+    constructor() {
+        this.root = null;
+    }
+
+    // add node to tree
+
+    addNode(value) {
+        let newNode = {value, left: null, right: null};
+
+        // set root if absent
+
+        if (this.root == null) {
+            this.root = newNode;
+            return;
+        }
     }
 }
