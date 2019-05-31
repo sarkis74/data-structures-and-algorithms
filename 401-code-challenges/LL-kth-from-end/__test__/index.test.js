@@ -1,9 +1,9 @@
 'use strict';
 
-const List = require('./index');
+const LinkedList = require('../index');
 
 describe('Code Challenge 07 tests', () => {
-    const testList = new List();
+    const testList = new LinkedList();
     [8, 6, 4, 2].forEach(number => testList.insertAtHead(number));
 
     it(`Should return 'Exception' if k is greater than the length of the linked list`, () => {
