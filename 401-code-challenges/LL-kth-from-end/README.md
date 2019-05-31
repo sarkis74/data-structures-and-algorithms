@@ -10,14 +10,14 @@
 * Returned the current value.
 
 ## Solution
-![Whiteboard]();
+![Whiteboard](https://github.com/sarkis74/data-structures-and-algorithms/blob/master/401-code-challenges/LL-kth-from-end/LinkedListKth.jpg);
 
 ## Tests
 * Can successfully find the kth value of a linked list.
-* Returns 'Exception' if k = a negative integer.
-* Returns 'Exception' if k is not a number.
-* Returns 'Exception' if k > length of linked list.
+* Returns 'value not found' if k = a negative integer.
+* Returns 'value not found' if k is not a number.
+* Returns 'value not found' if k > length of linked list.
 
 ## Big O
-* Time - O(2n)
+* Time - O(n)
 * Space - O(1)
