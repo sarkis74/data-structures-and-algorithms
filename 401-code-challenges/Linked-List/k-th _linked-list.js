@@ -1,6 +1,6 @@
 'use strict';
 
-const LinkedList = require('../linked-list')
+const LinkedList = require('../LL-Methods/linked-list')
 
 const list = new newLinkedList();
 
