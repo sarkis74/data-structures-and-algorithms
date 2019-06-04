@@ -1,11 +1,17 @@
 'use strict';
 
-    function MergedLL(value, next) {
-        this.value = value;
-        this.next = next;
-    };
+const LinkedList = require('./linked_list.js');
 
-    MergedLL.prototype.zipper(list1, list2) {
+const linkedList1= new LinkedList();
+linkedList1.insertAtHead(5);
+linkedList1.insertAtHead(3);
+linkedList1.insertAtHead(1);
+const linkedList2= new LinkedList ();
+linkedList2.insertAtHead(6);
+linkedList2.insertAtHead(4);
+linkedList2.insertAtHead(2);
+
+    const zipper = (list1, list2) => {
 
         let currentListA = list1.head;
         let currentListB = list2.head;
@@ -27,14 +33,6 @@
     };
 
 
+zipper(linkedList1, linkedList2);
 
-// let objA = new MergedLL('a');
-// objA.next = {value: 'b', next: {value: 'c', next: null}};
-//
-// let objB = new MergedLL(1);
-// objB.next = {value: 2, next: null};
-//
-// objA.zipper(objA, objB);
-//
-//
-// module.exports = zipper;
+module.exports = zipper;
