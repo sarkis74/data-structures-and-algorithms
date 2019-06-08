@@ -1,36 +1,38 @@
 'use strict';
 
-function Node(data, next) {
-    this.data = data;
-    this.next = next;
-}
+const LinkedList = require('./linked_list.js');
 
-let objA = {head: {value: 'a', next: {value: 'b', next: {value: 'c', next: null}}}};
+const linkedList1= new LinkedList();
+linkedList1.insertAtHead(5);
+linkedList1.insertAtHead(3);
+linkedList1.insertAtHead(1);
+const linkedList2= new LinkedList ();
+linkedList2.insertAtHead(6);
+linkedList2.insertAtHead(4);
+linkedList2.insertAtHead(2);
 
-let objB = {head: {value: 1, next: {value: 2, next: null}}};
+    const zipper = (list1, list2) => {
+
+        let currentListA = list1.head;
+        let currentListB = list2.head;
+        let tempA = currentListA.next;
+        let tempB = currentListB.next;
+
+        while (tempA && tempB) {
+
+            currentListA.next = currentListB;
+            currentListB.next = tempA;
+            currentListA = tempA;
+            currentListB = tempB;
+            tempA = currentListA.next;
+            tempB = currentListB.next;
+
+        }
+
+        return list1;
+    };
 
 
+zipper(linkedList1, linkedList2);
 
-function zipper(list1, list2) {
-
-    let currentListA = list1.head;
-    let currentListB = list2.head;
-    let tempA = currentListA.next;
-    let tempB = currentListB.next;
-
-    while (tempA && tempB) {
-
-        currentListA.next = currentListB;
-        currentListB.next= tempA;
-        currentListA = tempA;
-        currentListB = tempB;
-        tempA = currentListA.next;
-        tempB = currentListB.next;
-
-    }
-
-    return list1;
-
-};
-
-zipper(objA, objB);
+module.exports = zipper;
