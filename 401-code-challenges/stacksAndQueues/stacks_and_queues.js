@@ -1,6 +1,6 @@
 'use strict';
 
-const Node = require('./node');
+const Node = require('./node);
 
 class Stack{
     constructor(){
@@ -12,9 +12,9 @@ class Stack{
         this.top.next = temp;
     }
     pop(){
-        const output = this.top.value; // Assigns the to-be popped value to a variable that will later be returned.
-        this.top = this.top.next; // H"Liana - moves the 'next' value into the top position
-        return output;
+        const result = this.top.value;
+        this.top = this.top.next;
+        return result;
     }
     peek(){
         return this.top.value;
@@ -24,28 +24,28 @@ class Stack{
 class Queue{
     constructor(){
         this.front = null;
-        this.rear = null;
+        this.back = null;
     }
     enqueue(value){
         // Worked with Skyler on this portion
         let newNode = new Node(value);
 
-        if (this.rear === null) {
+        if (this.back === null) {
             this.front = newNode;
-            this.rear = newNode;
+            this.back = newNode;
         } else {
-            this.rear.next = newNode;
-            this.rear = newNode;
+            this.back.next = newNode;
+            this.back = newNode;
         }
     }
 
     dequeue(){
-        const output = this.front.value;
+        const result = this.front.value;
         if (this.front || this.front.next) {
             this.front = this.front.next;
         }
         if (this.front === null) this.rear = null;
-        return output;
+        return result;
     }
 
     peek(){
