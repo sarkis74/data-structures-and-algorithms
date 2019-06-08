@@ -23,7 +23,7 @@
 
 
 ### Solution
-![https://github.com/sarkis74/data-structures-and-algorithms/blob/master/401-code-challenges/queue_with_stacks/queues_w_stacks.jpg)
+![whiteboard](https://github.com/sarkis74/data-structures-and-algorithms/blob/master/401-code-challenges/queue_with_stacks/queues_w_stacks.jpg)
 
 
 
