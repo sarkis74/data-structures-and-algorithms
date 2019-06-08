@@ -15,7 +15,7 @@
 * Once we're done traversing both list1 and list2, it returns the head of the new linked list.
 
 ## Solution
-![Whiteboard]()
+![Whiteboard](./merged%20linked%20list.jpg)
 
 ## Tests
 * Can successfully merge two linked lists with same amount of nodes.
