@@ -1,6 +1,7 @@
 'use strict';
 
-const stackAndQueue = require('../stacks-and-queues.js');
+const stackAndQueue = require('../stacks_and_queues');
+
 
 describe('stack data structure', () => {
 

@@ -27,7 +27,6 @@ class Queue{
         this.back = null;
     }
     enqueue(value){
-        // Worked with Skyler on this portion
         let newNode = new Node(value);
 
         if (this.back === null) {
@@ -53,5 +52,7 @@ class Queue{
     }
 
 }
+
+let test = new Stack();
 
 module.exports = { Stack, Queue };
