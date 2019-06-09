@@ -43,7 +43,7 @@ class Queue{
         if (this.front || this.front.next) {
             this.front = this.front.next;
         }
-        if (this.front === null) this.rear = null;
+        if (this.front === null) this.back = null;
         return result;
     }
 
@@ -53,6 +53,5 @@ class Queue{
 
 }
 
-let test = new Stack();
 
 module.exports = { Stack, Queue };
