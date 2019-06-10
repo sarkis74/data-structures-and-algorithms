@@ -2,15 +2,16 @@
   "name": "401-code-challenges",
   "version": "1.0.0",
   "description": "",
-  "main": "queue_with_stacks.js",
+  "main": "fizbuzz_tree.js",
   "scripts": {
-    "test": "jest --verbose --coverage"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^24.8.0"
   }
 }
