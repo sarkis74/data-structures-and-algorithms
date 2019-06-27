@@ -1,0 +1,16 @@
+{
+  "name": "401-code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "queue_with_stacks.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
