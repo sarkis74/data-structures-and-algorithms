@@ -47,24 +47,12 @@ class HashTable {
         }
         else
         {
-            for(let data of this.map[hashedKey]){
-                if(data[0] === key){
-                    return data[1];
+            for(let data in this.map[hashedKey]){
+                if(this.map[hashedKey].key === key){
+                    return this.map[hashedKey].value;
                 }
             }
         }
-    }
-
-    search(linkedList, key) {
-        let current = linkedList.head;
-        let object = null;
-        while(current){
-            if (object.key(current.value)[0] === key){
-                return (object = current);
-            }
-            current = current.next;
-        }
-        return object;
     }
 
 }
