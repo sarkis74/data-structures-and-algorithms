@@ -12,7 +12,7 @@ Write a breadth first traversal method which takes a Binary Tree as its unique i
 * Repeats until there are no longer any items left in queue.
 
 ## Solution
-![Whiteboard]()
+![Whiteboard](https://github.com/sarkis74/data-structures-and-algorithms/blob/master/401-code-challenges/Breadth-First/BFSdownload.png)
 
 ## Tests
 * `npm test`
