@@ -1,15 +1,17 @@
 {
-  "name": "Breadth-First",
+  "name": "401-code-challenges",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "fizbuzz_tree.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "dependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^24.8.0"
   }
 }
