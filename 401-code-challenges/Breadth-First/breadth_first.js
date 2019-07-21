@@ -1,22 +1,22 @@
 'use strict';
 
-// node class
+const bFS = (root, arr) => {
+    if (!root){
+        return 'root is null';
+    }
+    const queue = [];
+    queue.push(root);
 
-class BST {
-    constructor() {
-        this.root = null;
+    while(queue.length > 0) {
+        let current = queue.shift();
+
+        console.log(current.value);
+        arr.push(current.value);
+        if(current.left) queue.push(current.left);
+        if(current.right) queue.push(current.right)
     }
 
-    // add node to tree
+    return arr;
+};
 
-    addNode(value) {
-        let newNode = {value, left: null, right: null};
-
-        // set root if absent
-
-        if (this.root == null) {
-            this.root = newNode;
-            return;
-        }
-    }
-}
+module.exports = bFS;
