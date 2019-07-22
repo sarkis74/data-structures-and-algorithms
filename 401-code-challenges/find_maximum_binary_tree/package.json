@@ -1,0 +1,17 @@
+{
+  "name": "401-code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fizbuzz_tree.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^24.8.0"
+  }
+}
