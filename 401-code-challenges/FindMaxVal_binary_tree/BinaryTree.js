@@ -9,10 +9,9 @@ class BinaryTree {
             return null;
         }
         if (!current.left&&!current.right){
-            return (current.value)
+            return current.value;
         }else{
-            let left = null;
-            let right = null;
+            let left, right;
             if (current.left){
                 left = this.findMaxVal(current.left);
             }
