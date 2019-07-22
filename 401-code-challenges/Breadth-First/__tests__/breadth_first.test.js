@@ -9,7 +9,6 @@ class BinaryTree {
     }
 }
 
-module.exports = BinaryTree;
 
 describe('tests bfs of a binary tree', () => {
 
